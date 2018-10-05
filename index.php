@@ -36,12 +36,16 @@ $aluno = new Usuario("Washington", "102030");
 //$aluno->setDessenha("@!$123");
 $aluno->insert();
 echo $aluno;
-*/
 
+//Alterar um usuario.
 $usuario = new Usuario();
 $usuario->loadbyId(7);
-
 $usuario->update("professor", "789654000");
+echo $usuario;
+*/
+$usuario = new Usuario();
+$usuario->loadbyId(9);
+$usuario->delete();
 
 echo $usuario;
 
